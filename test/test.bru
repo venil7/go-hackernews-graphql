@@ -1,0 +1,22 @@
+meta {
+  name: test
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: http://localhost:9090/graphql
+  body: graphql
+  auth: none
+}
+
+body:graphql {
+  {
+   item(id: 44444) {
+      id text title type
+      items {
+        id text title by
+      }
+    }
+  }
+}

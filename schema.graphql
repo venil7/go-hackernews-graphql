@@ -1,0 +1,22 @@
+type Item {
+  id: Int!
+  deleted: Boolean!
+  type: String!
+  by: String!
+  time: Int!
+  text: String!
+  dead: Boolean!
+  parent: Int!
+  poll: Int!
+  kids: [Int!]!
+  items: [Item!]!
+  url: String!
+  score: Int!
+  title: String!
+  parts: [Int!]!
+  descendants: Int!
+}
+
+type Query {
+  item(id: Int!): Item!
+}
